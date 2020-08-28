@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch Full HD quality movie with netflix">
+    <meta name="keywords" content="movie, series, film, documentary, netflix">
+    <meta name="author" content="Yasin Kilic">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bowlby+One+SC|Sorts+Mill+Goudy&display=swap" rel="stylesheet"> <!--if you dont give this link, you can not make header font family "Bowlby One SC"-->
+    <link rel="shortcut icon" href="./Netflix.png" type="image/png">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header"><h1>Net<span>Flix</span></h1></div>
+        <div id="desc"><h3>Thank you for signing up at Netflix. Tell us more about your self</h3></div>
+        <div id="form_box">
+            <form action="result.html" name="myresult" method="">
+
+                <label>Name<br><input type="text" name="name" class="cursor" placeholder="Enter your name" required></label><br>
+
+                <label>Age<br><input type="number" name="age" class="cursor" min="18" max="65" placeholder="Age" required></label><br>
+
+                <label>Email<br><input type="email" name="email" class="cursor" placeholder="Enter your email" required></label><br>
+
+                <label for="content">Content type<br></label>
+                <select  name="content" id="content"><br>
+                    <option value="movie">Movie
+                    <option value="series" selected>Series
+                </select>
+
+                <label>Movie type</label><br>
+                <label><input type="checkbox" name="movie-1" id="comedy" value="comedy">Comedy</label><br>
+                <label><input type="checkbox" name="movie-2" id="action" value="action">Action</label><br>
+                <label><input type="checkbox" name="movie-3" id="romance" value="romance">Romance</label><br><br>
+           
+                <label>Gender</label><br>
+                <label><input type="radio" name="gender" id="male" value="male">Male</label><br>
+                <label><input type="radio" name="gender" id="female" value="female">Female</label><br>
+                <label><input type="radio" name="gender" id="other" value="other">Other</label><br><br>
+
+            <div id="end">
+                <label id="feed">Feed back<br><textarea name="comment" id="comment" cols="45%" rows="5" placeholder="Any comment"></textarea></label><br>
+
+                <div id="submit">
+                    <input type="submit" id="button">
+                </div>
+            </div>
+    
+                
+
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

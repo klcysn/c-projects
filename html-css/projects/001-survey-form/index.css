@@ -1,0 +1,85 @@
+body {background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/998c1c50-6aaa-4795-ab62-9190a025d529/b9883521-f439-4c16-b5eb-b1719e2fece1/ZA-en-20191203-popsignuptwoweeks-perspective_alpha_website_small.jpg");}
+
+#container {margin: auto;
+margin-top: 40px;
+width: 85%;
+padding-top: 1px;
+background:rgba(0, 0, 0, 0.4)}
+
+#header {color: white;
+text-align: center;
+font-size: x-large;
+letter-spacing: 5px;
+font-family: "Bowlby One SC", cursive;
+font-variant: small-caps;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+#desc {color: whitesmoke;
+text-align: center;
+font-size: larger;
+padding-top: 0px;
+margin-top: -30px;
+}
+
+span{color: red;}
+
+form {margin-left: auto;
+    margin-right: auto;
+width: 30%;
+color: white;
+background:rgba(0, 0, 0, 0.8);
+padding:30px;
+}
+
+.cursor {margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 5%;
+margin-right: 5%;
+width: 90%;
+height: 40px;
+}
+
+label {margin-left: 5%;
+font-size: medium;}
+
+#content {margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+    height: 40px;}
+
+#comedy, #action, #romance {margin-left:auto;}
+#male, #female, #other {margin-left: auto;}
+
+#end {width: 80%;
+margin-left: 5%;
+margin-right: auto;}
+
+
+#comment, #feed {margin-left: 0;
+    width: 100%;
+margin-top: 8px;}
+
+#submit {width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#button {border: none;
+    background-color: red;
+    color:white;
+    width: 100%;
+    height:40px;
+    border-radius: 20px;
+    font-size: large;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: white;
+    color: red;
+}
