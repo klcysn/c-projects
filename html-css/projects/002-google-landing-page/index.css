@@ -79,3 +79,8 @@ background-position-y: center;
 background-position-x: 1.5vw;
 padding-left: 50px;
 margin-top: 1.5vw;}
+
+#last1, #last2 {margin-top: 2em;
+width: 30%;
+height: 3em;
+margin-left:2em;}
