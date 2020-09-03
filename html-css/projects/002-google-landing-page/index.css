@@ -26,6 +26,9 @@ a:hover {
   padding-right: 0.7em;
 }
 
+#top div {position: fixed;
+right: 0.8em;}
+
 #sign {
   width: 5.3em;
   float: right;
@@ -92,6 +95,7 @@ a:hover {
   padding-left: 3.8em;
   margin-top: 1.5em;
 }
+#search::-webkit-search-cancel-button {display: none;}
 
 #search:hover {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
