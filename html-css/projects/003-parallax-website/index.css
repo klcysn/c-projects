@@ -3,16 +3,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  text-align: center;
+  line-height: 1.8rem;
+  
 }
 
 html {
   font-size: 16px;
+  color: rgb(102, 102, 102);
 }
+
+h2 {margin: 1rem;}
+
+#container-1 {
+    opacity: 0.7;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.layer-1 {margin-top: 12vh;}
 
 
 #layer-1-1 {
     width: 100vm;
     height: 100vh;
+    margin-top: 0;
     background-image: url(./img/Image1.jpg);
     background-size: cover;
     position: sticky;
@@ -49,3 +64,72 @@ html {
     top:0;
     z-index: 4;  
 }
+
+#container-2 {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    }
+
+.head {
+    color:white;
+    letter-spacing: 0.5rem;
+    width: 60vh;
+    margin: auto;
+    font-size: 1.8rem;
+    margin-top: 35vh;
+}
+
+.dif {
+    /* box-sizing: content-box; */
+    width: 30vw;
+    background-color: #111111;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    padding: 1.5rem 1.5rem;
+    /* text-align: center; */
+}
+
+#s-1 {
+    margin: auto;
+    margin-top: 50vh;
+    }
+
+#s-2 {
+    background-color: rgb(244, 244, 244);
+    /* text-align: center; */
+    margin-top: 39vh;
+    padding: 3rem 5rem;
+}
+
+#s-4 {
+    background-color: rgb(40, 46, 52);
+    color: rgb(221, 221, 221);
+    margin-top: 21.5vh;
+    padding: 3rem 5rem;
+}
+
+#s5 {}
+
+#s-6 {
+    background-color: rgb(40, 46, 52);
+    color: rgb(221, 221, 221);
+    margin-top: 33.3vh;
+    padding: 3rem 5rem;
+}
+
+#s-7 {
+    width: 90vh;
+    margin-top: 50vh;
+}
+/* .layer-top {
+    width: 30vw;
+    height: 10vh;
+    float: left;
+    margin: -1.5rem;
+    background-color: black;
+    position: relative;
+    top: 0;
+    z-index: 1;
+} */
