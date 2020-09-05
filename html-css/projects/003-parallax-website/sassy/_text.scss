@@ -1,0 +1,56 @@
+.black {
+  background-color: rgb(17, 17, 17);
+}
+
+#image-1 .black {
+    width: 30vw;
+}
+
+#section_white {
+    background-color:$secondaryBackgroundColor;
+    color: $secondaryTextColor;
+    padding: 3rem 5rem;
+    text-align: center;
+
+    p {
+        font-size: 1.1rem;
+    
+    }
+    
+    h2 {
+        margin: 1.3rem;
+        font-size: 1.7rem;
+    }
+}
+
+.image p {
+    color: $primaryTextColor;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    margin: auto;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    padding: 1.4rem 0.7rem;
+    width: 40vw;
+}
+
+.section_black {
+    background-color: $primaryBackgroundColor;
+    padding: 3rem 5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(221, 221, 221);
+
+    p {
+        font-size: 1.1rem;
+    
+    }
+    
+    h2 {
+        margin: 1.3rem;
+        font-size: 1.7rem;
+        
+    }
+}
+

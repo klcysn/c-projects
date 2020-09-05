@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 16px;
+}
+
+.image {
+  height: 100vh;
+  background-size: cover;
+  opacity: 0.7;
+  background-attachment: fixed;
+}
+
+#image-1 {
+  background-image: url(../img/Image1.jpg);
+}
+
+#image-2 {
+  background-image: url(../img/Image2.jpg);
+}
+
+#image-3 {
+  background-image: url(../img/Image3.jpg);
+}
+
+#image-4 {
+  background-image: url(../img/Image1.jpg);
+}
+
+.black {
+  background-color: #111111;
+}
+
+#image-1 .black {
+  width: 30vw;
+}
+
+#section_white {
+  background-color: #f4f4f4;
+  color: #666666;
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+#section_white p {
+  font-size: 1.1rem;
+}
+
+#section_white h2 {
+  margin: 1.3rem;
+  font-size: 1.7rem;
+}
+
+.image p {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50vh;
+  margin: auto;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+  padding: 1.4rem 0.7rem;
+  width: 40vw;
+}
+
+.section_black {
+  background-color: #282e34;
+  padding: 3rem 5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.section_black p {
+  font-size: 1.1rem;
+}
+
+.section_black h2 {
+  margin: 1.3rem;
+  font-size: 1.7rem;
+}
+/*# sourceMappingURL=index.css.map */
