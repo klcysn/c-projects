@@ -1,0 +1,39 @@
+section {
+    background-color: $primaryColor;
+    color:$secondaryColor;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 25rem;
+    &:nth-of-type(odd) {
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 3rem 5rem;
+
+        p {
+            background-color: $primaryColor;
+            color: $secondaryColor;
+            padding: 1.25rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
+    &:first-of-type {
+        background-image: url("https://picsum.photos/id/684/600/400?random=1");
+        height: 100vh;
+    }
+    &:nth-of-type(3) {
+        background-image: url("https://picsum.photos/id/684/600/400?random=2");
+    }
+    &:nth-of-type(5) {
+        background-image: url("https://picsum.photos/id/684/600/400?random=3");
+    }
+    &:nth-of-type(7) {
+        background-image: url("https://picsum.photos/id/684/600/400?random=4");
+        height: 100vh;
+    }
+}
