@@ -12,7 +12,7 @@ html {
 .main_container {
     display: flex;
     flex-flow: column;
-    height: 80rem;
+    height: 95rem;
     padding: 5rem;
 }
 
@@ -51,20 +51,20 @@ span {
 .part {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    width: 35%;
-    margin-right: -4rem;
+    flex: 32%;
+    /* margin-right: -4rem; */
 }
 
 .down {
-    align-self: flex-end;
+    align-self: center;
 }
 
 .person {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -74,12 +74,12 @@ img {
 }
 
 .image {
-    width: 70%;
+    width: 75%;
 }
 .job {
     transform: rotateZ(90deg);
-    transform-origin: -2rem -2rem;
-    font-size: 0.8rem;
+    transform-origin: -0.5vw -0.5vw;
+    font-size: 0.8vw;
     font-family: 'PT Serif', serif;
     font-weight: 100;
     white-space: nowrap;
@@ -101,11 +101,90 @@ img {
         flex: 50%
     }
 
-    .part:nth-child(even) {
-        margin-top: 4rem
+    .person {
+        flex:50%;
     }
 
-    .part:nth-child(odd) {
-        margin-top: -1rem
+    .part:nth-child(even):not(:last-child) {
+        margin-top: 2rem
     }
+
+    .down {
+        align-self: flex-start;
+        margin-top: -1rem;
+    }
+
+
+}
+
+@media screen and (max-width:617px) {
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+    .part {
+        flex:50%;
+    }
+    .name {
+        font-size: 1rem;
+    }
+    .down {
+        align-self: flex-start;
+        margin-top: -1rem;
+    }
+  
+}
+
+@media screen and (max-width: 556px) {
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+    .part {
+        flex: 45%;
+    }
+    .name {
+        font-size: 0.5rem;
+    }
+
+    .down {
+        align-self: flex-start;
+        margin-top: -1rem;
+    }
+  
+}
+
+@media screen and (max-width: 456px) {
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+    .part {
+        flex: 50%;
+    }
+
+    .down {
+        align-self: flex-start;
+        margin-top: -1rem;
+    }
+  
+}
+
+@media screen and (max-width: 321px) {
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+    .part {
+        flex: 45%;
+    }
+
+  
+    .down {
+        align-self: flex-start;
+        margin-top: -1rem;
+    }
+
+
+  
 }
