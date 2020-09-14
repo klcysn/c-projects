@@ -39,6 +39,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -268,6 +271,8 @@ html {
   border-top: 3.5px solid #a9508b;
   padding: 2rem;
   background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .container footer div {
@@ -295,15 +300,30 @@ html {
   }
 }
 
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 1025px) {
   html {
     font-size: 1.5vw;
+  }
+  .container .content {
+    height: 110%;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .container .content {
+    height: 115%;
+  }
+  .container .content form {
+    height: 75%;
   }
 }
 
 @media screen and (max-width: 890px) {
   html {
     font-size: 1.5vw;
+  }
+  .container .content {
+    height: 122%;
   }
 }
 
@@ -352,6 +372,7 @@ html {
   }
   .container .content {
     padding: 3rem 4rem;
+    height: 105%;
   }
   .container .content form {
     -ms-grid-row: 1;
@@ -361,6 +382,7 @@ html {
     grid-area: 1/1/2/4;
     margin-bottom: 2rem;
     width: 90%;
+    height: 100%;
   }
   .container .content div {
     width: 100%;
@@ -445,6 +467,12 @@ html {
   }
   .container header nav {
     margin-right: 0;
+  }
+  .container .content form {
+    height: 95%;
+  }
+  .container .content form input, .container .content form textarea {
+    font-size: 1rem;
   }
   .container .content {
     height: 105%;

@@ -42,6 +42,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #35424a;
   color: white;
   font-size: 1rem;
@@ -185,8 +188,8 @@ body {
           align-items: center;
   background-image: url(../img/showcase.jpg);
   background-repeat: no-repeat;
-  background-size: cover 35%;
-  background-position: top left;
+  background-size: cover 130%;
+  background-origin: border-box;
   padding: 8rem;
   color: white;
 }
@@ -373,7 +376,7 @@ body {
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1224px) {
   html {
     font-size: 1.5vw;
   }
@@ -434,12 +437,25 @@ body {
   .container header nav {
     margin-right: 0;
   }
+  .container .subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .container .subscribe div {
-    margin-left: 1rem;
+    margin: 0;
   }
   .container .subscribe form {
     margin-right: 1rem;
-    width: 40%;
+    width: 80%;
+    margin: 1rem 0 0 0;
   }
   .container footer div img {
     width: 30%;
@@ -471,26 +487,6 @@ body {
   }
   .container main {
     padding: 8rem 4rem;
-  }
-  .container .subscribe {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .container .subscribe div {
-    margin: 0;
-  }
-  .container .subscribe form {
-    margin-right: 1rem;
-    width: 90%;
-    margin: 1rem 0 0 0;
   }
   .container .content div {
     width: 33%;

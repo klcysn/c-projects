@@ -15,6 +15,7 @@
         grid-area: 1/1/2/4;
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
         justify-content: space-between;
         background-color: $primaryBackgroundColor;
         color: $primaryTextColor;
@@ -192,6 +193,8 @@
         border-top: 3.5px solid rgb(169, 80, 139);
         padding: 2rem;
         background-color: rgba($color: rgb(255,255,255), $alpha: 1);
+        position: relative;
+        z-index: 1;
 
         div {
             font-size: 0.95rem;
@@ -217,17 +220,38 @@
     100% {transform: rotateY(360deg);}
 }
 
-@media screen and (max-width:988px) {
+@media screen and (max-width:1025px) {
     html {
         font-size: 1.5vw;
     }
+    .container .content {
+        height: 110%;
+    }
 
+ 
+}
+
+@media screen and (max-width:988px) {
+   
+    .container .content {
+        height: 115%;
+
+        form {
+            height: 75%;
+        }
+    }
  
 }
 
 @media screen and (max-width:890px) {
     html {
         font-size: 1.5vw;
+    }
+
+    .container .content {
+        height: 122%;
+
+        
     }
 }
 
@@ -269,11 +293,14 @@
 
     .container .content {
         padding: 3rem 4rem;
+
+        height: 105%;
        
         form {
             grid-area: 1/1/2/4;
             margin-bottom: 2rem;
             width: 90%;
+            height: 100%;
         }
 
         div {
@@ -341,6 +368,14 @@
         }
         nav{
             margin-right: 0;
+        }
+    }
+
+    .container .content form {
+
+        height: 95%;
+        input, textarea {
+            font-size: 1rem;
         }
     }
 

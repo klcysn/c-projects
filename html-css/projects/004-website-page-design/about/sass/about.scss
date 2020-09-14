@@ -16,6 +16,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        align-items: center;
         background-color: $primaryBackgroundColor;
         color: $primaryTextColor;
         font-size: 1rem;
@@ -196,21 +197,38 @@
     100% {transform: rotateY(360deg);}
 }
 
-@media screen and (max-width:988px) {
+@media screen and (max-width:2052px) {
     html {
-        font-size: 1.5vw;
+        font-size: 1vw;
+    }
+    .container .subscribe form {
+        #email {
+            width: 68%;
+        }
+
+        #submit {
+            width: 30%;
+        }
+    }
+
+    .container .content {
+        height: 120%;
     }
 
  
 }
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:900px) {
     html {
         font-size: 1.5vw;
     }
+
+    .container .content {
+        height: 130%;
+    }
 }
 
-@media screen and (max-width:693px) {
+@media screen and (max-width:855px) {
     html {
         font-size: 2.5vw;
     }
@@ -244,9 +262,19 @@
         margin-right: 1rem;
         width: 90%;
         margin: 1rem 0 0 0;
+
+        #email {
+            width: 71%;
+        }
+
+        #submit {
+            width: 27%;
+        }
     }
 
     .container .content {
+
+        height: 100%;
        
         div:nth-child(1) {
             grid-area: 1/1/2/4;
@@ -263,7 +291,7 @@
     }
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:541px) {
     html {
         font-size: 3vw;
     }
@@ -282,6 +310,9 @@
         nav{
             margin-right: 0;
         }
+    }
+    .container .content {
+        height: 100%;
     }
 
    
@@ -306,14 +337,16 @@
         }
     }
 
-    .container main {
-        padding: 8rem 4rem;
+    .container .content {
+        padding: 0 0 10rem 2rem;
+        height: 100%;
+
+        div {
+            width: 33%;
+         
+        }
     }
 
-
-    .container .content div {
-        width: 33%;
-    }
 
     .container footer div img {
         width: 30%;

@@ -16,6 +16,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        align-items: center;
         background-color: $primaryBackgroundColor;
         color: $primaryTextColor;
         font-size: 1rem;
@@ -127,8 +128,8 @@
         align-items:center;
         background-image: url(../img/showcase.jpg);
         background-repeat: no-repeat;
-        background-size: cover 35%;
-        background-position: top left;
+        background-size:cover 130%;
+        background-origin: border-box;
         padding:8rem;
         color: $primaryTextColor;
 
@@ -269,7 +270,7 @@
     100% {top: 0;left: 0; opacity:1;}
 }
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:1224px) {
     html {
         font-size: 1.5vw;
     }
@@ -323,13 +324,20 @@
         }
     }
 
+    .container .subscribe {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .container .subscribe div {
-        margin-left: 1rem;
+        margin: 0;
     }
 
     .container .subscribe form {
         margin-right: 1rem;
-        width: 40%;
+        width: 80%;
+        margin: 1rem 0 0 0;
     }
     .container footer div img {
         width: 30%;
@@ -359,21 +367,7 @@
         padding: 8rem 4rem;
     }
 
-    .container .subscribe {
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container .subscribe div {
-        margin: 0;
-    }
-
-    .container .subscribe form {
-        margin-right: 1rem;
-        width: 90%;
-        margin: 1rem 0 0 0;
-    }
+   
 
     .container .content div {
         width: 33%;
