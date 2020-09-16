@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.css">
-    <script src="https://kit.fontawesome.com/07c1d74b52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <title>Checkout</title>
 </head>
 <body>
@@ -39,25 +39,29 @@
                 <i class="fas fa-city"></i>
                 <input type="text" name="city" id="city" placeholder="Enter your city...">
             </div>
-            <label for="country">Country</label>
-            <div>
-                <i class="fas fa-globe-europe"></i>
-                <select name="country" id="country">
-                    <optgroup label="Europe">
-                        <option value="Turkey">Turkey</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Uk">UK</option>
-                    </optgroup>
-                    <optgroup label="America">
-                        <option value="USA">USA</option>
-                        <option value="Canada">Canada</option>
-                    </optgroup>
-                </select>
+            <div class="bottom-select">
+                <label for="country">Country</label>
+                <div>
+                    <i class="fas fa-globe-europe"></i>
+                    <select name="country" id="country">
+                        <optgroup label="Europe">
+                            <option value="Turkey">Turkey</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Uk">UK</option>
+                        </optgroup>
+                        <optgroup label="America">
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                        </optgroup>
+                    </select>
+                </div>
             </div>
-            <label for="post">Post code</label>
-            <div>
-                <i class="fas fa-mail-bulk"></i>
-                <input type="text" name="post" id="post" placeholder="Enter your postal code...">
+            <div class="bottom-input">
+                <label for="post">Post code</label>
+                <div>
+                    <i class="fas fa-mail-bulk"></i>
+                    <input type="text" name="post" id="post" placeholder="Enter your postal code...">
+                </div>
             </div>
             <label><input type="checkbox" name="information">See this information next time</label><br>
             <button type="submit">Continue</button>
@@ -70,9 +74,11 @@
                     <div>
                         <h3>Vintage Backbag</h3>
                         <p><span>$54.99</span> <small><del>$94.99</del></small></p>
-                        <button>-</button>
-                        <input type="number" id="number" min="1" placeholder="0">
-                        <button>+</button>
+                        <div>
+                            <button>-</button>
+                            <input type="number" id="number" value="1" placeholder="0">
+                            <button>+</button>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -80,9 +86,11 @@
                     <div>
                         <h3>Levi Shoes</h3>
                         <p><span>$74.99</span> <small><del>$124.99</del></small></p>
-                        <button>-</button>
-                        <input type="number" id="number" min="1" placeholder="0">
-                        <button>+</button>
+                        <div>
+                            <button>-</button>
+                            <input type="number" id="number" value="1" placeholder="0">
+                            <button>+</button>
+                        </div>
                     </div>
                 </div>
             </div>

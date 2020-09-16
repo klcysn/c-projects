@@ -9,4 +9,223 @@ html {
   font-size: 0.95vw;
   font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 2rem;
+}
+
+.container header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1/1/2/3;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.container form {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/4/2;
+  color: #333333;
+  padding: 0 0 0 8rem;
+}
+
+.container form h3 {
+  margin: 3rem 0 1rem 0;
+}
+
+.container form div {
+  width: 70%;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  border-radius: 5px;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.container form div input, .container form div select {
+  width: 98%;
+  height: 105%;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.container form .bottom-select {
+  width: 30%;
+  display: inline-block;
+  border: none;
+  height: 5rem;
+  padding-left: 0;
+}
+
+.container form .bottom-input {
+  width: 60%;
+  display: inline-block;
+  border: none;
+  height: 5rem;
+  padding-left: 0;
+  margin-left: -2.2rem;
+}
+
+.container form label {
+  display: block;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #4f4f4f;
+}
+
+.container form i {
+  color: #828282;
+}
+
+.container form button {
+  width: 15%;
+  color: white;
+  background-color: #f2994a;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1rem;
+  margin-left: 23rem;
+}
+
+.container .basket {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 55%;
+  padding: 1rem 2rem 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.container .basket img {
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+.container .basket div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  color: #4e5150;
+}
+
+.container .basket div span {
+  font-weight: 700;
+  color: #f2994a;
+}
+
+.container .basket div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.container .basket div div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-left: 0.5rem;
+}
+
+.container .basket div div div p {
+  margin: 0.2rem 0 1rem 0;
+}
+
+.container .basket div div div div {
+  border: 1px solid #4e5150;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 0.5rem;
+  width: 62%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.container .basket div div div div input {
+  width: 40%;
+  margin: 0 -0.8rem 0 -0.5rem;
+  text-align: center;
+  background-color: #eeeeee;
+  border: none;
+  color: #4e5150;
+  font-size: 0.8rem;
+}
+
+.container .basket div div div div button {
+  width: 30%;
+  margin: 0 0.3rem 0 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  position: relative;
+  z-index: 1;
+  height: 1.8rem;
+  background-color: #e0e0e0;
+}
+
+.container .basket div table {
+  color: black;
+  margin-top: 3rem;
+}
+
+.container .basket div table td {
+  border-top: 1px solid #4e5150;
+  padding-bottom: 0.4rem;
+}
 /*# sourceMappingURL=index.css.map */

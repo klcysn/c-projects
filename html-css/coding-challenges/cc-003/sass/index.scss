@@ -2,3 +2,177 @@
 @import "root";
 @import "globals";
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+    justify-content: center;
+    grid-gap: 2rem;
+
+    header {
+        grid-area: 1/1/2/3;
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+
+    form {
+        grid-area: 2/1/4/2;
+        color: $primaryTextColor;
+        padding:0 0 0 8rem;
+
+
+        h3 {
+            margin: 3rem 0 1rem 0;
+        }
+
+        div {
+            width: 70%;
+            border: 1px solid rgba($color: $primaryTextColor, $alpha: 0.5);
+            border-radius: 5px;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+            font-size: 1.2rem;
+            overflow: hidden;
+
+            input,select {
+                width: 98%;
+                height: 105%;
+                border: none;
+                outline: none;
+                padding-left: 1rem;
+ 
+            }
+        }
+
+        .bottom-select {
+            width: 30%;
+            display: inline-block;
+            border: none;
+            height: 5rem;
+            padding-left: 0;
+        }
+
+        .bottom-input {
+            width: 60%;
+            display: inline-block;
+            border: none;
+            height: 5rem;
+            padding-left: 0;
+            margin-left: -2.2rem;
+        }
+
+        label {
+            display: block;
+            padding: 0.5rem 0 0.5rem 0;
+            font-size: 0.9rem;
+            color: $secondaryTextColor;
+        }
+
+        i {
+            color:rgb(130, 130, 130);
+        }
+
+        button {
+            width: 15%;
+            color: white;
+            background-color:rgb(242, 153, 74);
+            border: none;
+            border-radius: 0.5rem;
+            outline: none;
+            padding: 1rem;
+            margin-left: 23rem;
+        }
+    }
+
+    .basket {
+        grid-area: 2/2/3/3;
+        background-color: $secondaryBackgroundColor;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 55%;
+        padding:1rem 2rem 1rem 1rem;
+        border-radius: 0.5rem;
+
+        img {
+            width: 40%;
+            padding: 0.5rem;
+            border-radius: 1.5rem;
+        }
+
+        div {
+            display: flex;
+            flex-flow: column nowrap; 
+            color: $minorityTextColor;
+
+            span {
+                font-weight: 700;
+                color:rgb(242, 153, 74);
+            }
+            div {
+                display: flex;
+                flex-flow: row nowrap;
+               
+
+                div {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    margin-left: 0.5rem;
+
+                     p {
+                            margin: 0.2rem 0 1rem 0;
+                        }
+                    
+                    div {
+                        border: 1px solid $minorityTextColor;
+                        border-radius: 0.5rem;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        padding: 0.5rem;
+                        width:62%;
+                        justify-content: center;
+                        margin-top: 1rem;
+
+                        input {
+                            width:40%;
+                            margin: 0 -0.8rem 0 -0.5rem;
+                            text-align: center;
+                            background-color: $secondaryBackgroundColor;
+                            border: none;
+                            color: $minorityTextColor;
+                            font-size: 0.8rem;
+                        }
+                        
+                        button {
+                            width:30%;
+                            margin: 0 0.3rem 0 0;
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            border-radius: 0.3rem;
+                            border: none;
+                            position: relative;
+                            z-index: 1;
+                            height: 1.8rem;
+                            background-color: rgb(224, 224, 224);
+                        }
+                    }
+                }
+            }
+
+            table {
+                color: black;
+                margin-top: 3rem;
+
+                td {
+                    border-top: 1px solid $minorityTextColor;
+                    padding-bottom: 0.4rem;
+                }
+            }
+        }
+
+    }
+}
