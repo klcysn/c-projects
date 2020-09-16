@@ -118,14 +118,18 @@
             div {
                 display: flex;
                 flex-flow: row nowrap;
+                
                
 
                 div {
                     display: flex;
                     flex-flow: column nowrap;
                     margin-left: 0.5rem;
+                    justify-content: space-evenly;
+                    
 
-                     p {
+
+                    p {
                             margin: 0.2rem 0 1rem 0;
                         }
                     
@@ -137,7 +141,7 @@
                         padding: 0.5rem;
                         width:62%;
                         justify-content: center;
-                        margin-top: 1rem;
+                        
 
                         input {
                             width:40%;
@@ -145,6 +149,7 @@
                             text-align: center;
                             background-color: $secondaryBackgroundColor;
                             border: none;
+                            outline: none;
                             color: $minorityTextColor;
                             font-size: 0.8rem;
                         }
@@ -185,16 +190,11 @@
 
         .container{
 
-            header{
-                // grid-area: 1/1/2/3;
-            }
             .basket {
-                // grid-area: 2/1/3/3;
                 width: 90%;
             }
     
             form {
-                // grid-area: 3/1/4/3;
                 padding-left: 2rem;
 
                 div {
