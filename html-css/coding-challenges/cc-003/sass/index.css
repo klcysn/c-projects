@@ -66,10 +66,11 @@ html {
 
 .container form div input, .container form div select {
   width: 98%;
-  height: 105%;
+  height: 100%;
   border: none;
   outline: none;
   padding-left: 1rem;
+  font-size: 1rem;
 }
 
 .container form .bottom-select {
@@ -109,6 +110,7 @@ html {
   outline: none;
   padding: 1rem;
   margin-left: 23rem;
+  font-size: 1rem;
 }
 
 .container .basket {
@@ -227,5 +229,60 @@ html {
 .container .basket div table td {
   border-top: 1px solid #4e5150;
   padding-bottom: 0.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 1.7vw;
+  }
+  html .container .basket {
+    width: 90%;
+  }
+  html .container form {
+    padding-left: 2rem;
+  }
+  html .container form div {
+    width: 100%;
+  }
+  html .container form .bottom-input {
+    width: 60%;
+    margin: 0;
+  }
+  html .container form .bottom-select {
+    width: 30%;
+  }
+  html .container form button {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  html {
+    font-size: 2vw;
+  }
+  .container header {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 1/1/2/3;
+  }
+  .container .basket {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2/1/3/3;
+    margin-left: 2rem;
+    width: 90%;
+  }
+  .container form {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 3/1/4/3;
+    padding-left: 2rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
