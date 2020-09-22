@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+body {
+    background: url(./background.png) no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+div {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#entrance {
+    margin-top: 50px;
+}
+
+#entrance input[type="text"] {
+    min-width: 200px;
+    min-height: 30px;
+    border: none;
+    padding: 5px;
+}
+
+button {
+    min-height: 30px;
+    min-width: 80px;
+    font-weight: 700;
+    padding: 10px;
+    
+}
+
+#orientation {
+    font-size: xx-large;
+    font-weight: 800;
+}
+
