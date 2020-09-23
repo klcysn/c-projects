@@ -1,7 +1,13 @@
 
 document.getElementById("submit").addEventListener("click", Fibonacci)
+document.getElementById("number").addEventListener("keyup", enter)
 
-
+function enter(e){
+    if(e.keyCode === 13){
+        e.preventDefault()
+        document.getElementById("submit").click()
+    }
+}
 
 function Fibonacci(){
     let list = []
@@ -15,7 +21,7 @@ function Fibonacci(){
     }
     
     list.unshift(0)
-    document.getElementById("screen").innerHTML = list
+    document.getElementById("screen").innerHTML = "==>" + list.join(", ") + "<=="
 }
 
 
