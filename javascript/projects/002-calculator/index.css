@@ -35,6 +35,7 @@ body {
     width: 100%;
     height: 20%;
     padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .top_screen{
@@ -46,8 +47,8 @@ body {
 .bottom_screen{
     font-size: 2.2rem;
     color: white;
-    height: 4rem;
-    border: 1px solid white;
+    height: 3rem;
+    
 }
 
 .container2 {
