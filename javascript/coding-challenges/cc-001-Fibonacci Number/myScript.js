@@ -15,6 +15,7 @@ function Fibonacci(){
     for(i = -2; i < number-2; i++){
         if(i < 0){list.push(1);}
         else{
+            if(number >= list[i] + list[i + 1])
             list.push(list[i] + list[i + 1]);
         }
     
