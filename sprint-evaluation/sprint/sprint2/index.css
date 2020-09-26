@@ -4,15 +4,15 @@ body {
 }
 .container {
     width: 80vw;
-    height: 80vh;
+    height: 100vh;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .screen {
-    color: #48FC63;
-    font-size: 4vw;
+    color: #1cfa1c;
+    font-size: 9vw;
     font-family: 'Orbitron', sans-serif;
     background-color: rgba(233, 139, 32, 0.548);
     text-shadow: 5px 5px 10px;
