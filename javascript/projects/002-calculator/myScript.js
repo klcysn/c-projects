@@ -10,11 +10,13 @@ let bottomScreen = document.querySelector(".bottom_screen")
 
 number.forEach(function(button){ //every click on .number class triggers here
     button.addEventListener("click", function(){
-        if(bottomScreen.textContent.includes(".") && button.textContent == ".") return // here prevents double dot on screen
+        if(bottomScreen.textContent.includes(".") && button.textContent === ".") return // here prevents double dot on screen
         
-        if(bottomScreen.textContent === "0" && button.textContent != ".") { //here prevents double 0 without dot on screen
+        if(bottomScreen.textContent === "0" && button.textContent !== ".") { //here prevents double 0 without dot on screen
             bottomScreen.textContent = "0." + button.textContent
-        }else{bottomScreen.textContent += button.textContent}
+        }else{
+            bottomScreen.textContent += button.textContent;
+        }
     })
 })
 
@@ -31,8 +33,8 @@ operator.forEach((button) => { //every click on .operator class triggers here
     })
 })
 
-function display(){
-    topScreen.textContent = bottomScreen.textContent + operatorValue
+function display(){ //.toLocalString() adds comma at thousands om topscreen
+    topScreen.textContent = parseFloat(bottomScreen.textContent).toLocaleString('en-US', {minimumFractionDigits: 0}) + operatorValue
     bottomScreen.textContent = ""
     
 }
