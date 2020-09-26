@@ -33,8 +33,8 @@ operator.forEach((button) => { //every click on .operator class triggers here
     })
 })
 
-function display(){ //.toLocalString() adds comma at thousands om topscreen
-    topScreen.textContent = parseFloat(bottomScreen.textContent).toLocaleString('en-US', {minimumFractionDigits: 0}) + operatorValue
+function display(){
+    topScreen.textContent = parseFloat(bottomScreen.textContent) + operatorValue
     bottomScreen.textContent = ""
     
 }
