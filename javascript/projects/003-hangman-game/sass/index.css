@@ -79,11 +79,14 @@ body {
   margin-top: 3rem;
 }
 
-.word div {
+.letter {
   display: inline-block;
   border-bottom: 3px solid #2980B9;
+  width: 1rem;
   padding: 0.6rem;
+  margin-left: 1rem;
   text-align: center;
+  color: #34495E;
 }
 
 svg {

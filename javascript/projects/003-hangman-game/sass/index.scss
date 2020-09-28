@@ -52,12 +52,15 @@ body {
 .word {
     font-size: 1.9rem;
     margin-top: 3rem;
-    div {
-        display: inline-block;
-        border-bottom: 3px solid $primaryBorderColor;
-        padding: 0.6rem;
-        text-align: center;
-    }
+}
+.letter {
+    display: inline-block;
+    border-bottom: 3px solid $primaryBorderColor;
+    width: 1rem;
+    padding: 0.6rem;
+    margin-left: 1rem;
+    text-align: center;
+    color : $primaryBackgroundColor;
 }
 
 svg {
