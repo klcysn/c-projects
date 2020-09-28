@@ -1,0 +1,65 @@
+@import "reset";
+@import "root";
+@import "globals";
+
+body {
+    background-color: $primaryBackgroundColor;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    .header {
+        p {
+            margin-top: 1rem;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        // width: 30%;
+        margin-top: 5rem;
+
+        .up{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+    
+}
+
+.wrong {
+    p{
+        margin-bottom: 1rem;
+    }
+}
+
+.wrong_words {
+    font-size: 1.5rem;
+}
+
+.word {
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    div {
+        display: inline-block;
+        border-bottom: 3px solid $primaryBorderColor;
+        padding: 0.6rem;
+        text-align: center;
+    }
+}
+
+svg {
+    stroke: white;
+}

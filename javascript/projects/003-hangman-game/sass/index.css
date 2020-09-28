@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.95vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #34495E;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.container .header p {
+  margin-top: 1rem;
+}
+
+.container .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.container .main .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrong p {
+  margin-bottom: 1rem;
+}
+
+.wrong_words {
+  font-size: 1.5rem;
+}
+
+.word {
+  font-size: 1.9rem;
+  margin-top: 3rem;
+}
+
+.word div {
+  display: inline-block;
+  border-bottom: 3px solid #2980B9;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+svg {
+  stroke: white;
+}
+/*# sourceMappingURL=index.css.map */
