@@ -40,13 +40,16 @@ body {
 }
 
 .wrong {
+    border: 1px solid black;
     p{
         margin-bottom: 1rem;
+        
     }
 }
 
 .wrong_words {
     font-size: 1.5rem;
+    
 }
 
 .word {

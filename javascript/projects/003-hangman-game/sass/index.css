@@ -66,6 +66,10 @@ body {
           justify-content: space-between;
 }
 
+.wrong {
+  border: 1px solid black;
+}
+
 .wrong p {
   margin-bottom: 1rem;
 }
