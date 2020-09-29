@@ -33,7 +33,7 @@ function check(letter) {
             if(indx == man.length){ // to freeze screen when game end
                 document.querySelector(".anounce").innerText += wordList[i] // to add word in alert box user couldn't find
                 document.querySelector(".confirm_box_lost").style.display = "block"; // to make visible alert box
-                document.querySelector(".container2").style.display = "block"; // to freeze screen to not user click by mouse
+                document.querySelector(".container2").style.opacity = "0.6"; // to freeze screen to not user click by mouse
                 document.querySelector("body").removeEventListener("keyup", collector); // to remove entry button option from body 
             }else if(document.querySelector(".wrong_words").innerText == ""){ // to prevent write comma when user press first wrong letter button
                 document.querySelector(".wrong_words").textContent += letterLower;
@@ -46,7 +46,7 @@ function check(letter) {
                 numberKnown++
                 if(numberKnown == wordDiv.length){// to check if user knew all letter or not
                     document.querySelector(".confirm_box_win").style.display = "block"; //to say user win
-                    document.querySelector(".container2").style.display = "block"; //to freeze screen to not click
+                    document.querySelector(".container2").style.opacity = "0.6"; //to freeze screen to not click
                     document.querySelector("body").removeEventListener("keyup", collector) //to remove letter entry option by user
                 }
 
