@@ -14,8 +14,7 @@ word.forEach((letter) => { // to create div for every word char and give class a
     wordDiv.push(division);
 })
 document.querySelector("body").addEventListener("keyup", collector = function(letter){check(letter)}); //to take input from body's everywhere. And give name function to remove addEventListener later
-document.querySelector(".refresh").addEventListener("click", () => {location.reload()})// to refresh page to play again
-document.querySelector(".refresh2").addEventListener("click", () => {location.reload()})
+document.querySelectorAll(".refresh").forEach((button) =>{button.addEventListener("click", () => {location.reload()})})// to refresh page to play again
 
 
 
