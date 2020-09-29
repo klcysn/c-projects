@@ -27,7 +27,7 @@ body {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
-        // width: 30%;
+        width: 40%;
         margin-top: 5rem;
 
         .up{
@@ -40,7 +40,9 @@ body {
 }
 
 .wrong {
-    border: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     p{
         margin-bottom: 1rem;
         
