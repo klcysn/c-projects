@@ -18,28 +18,38 @@
             <div class="up">
                 <div class="draw">
                     <svg height="250" width="300">
-                        <line x1="50" y1="0" x2="50" y2="500" style="stroke-width:6" />
-                        <line x1="0" y1="250" x2="100" y2="250" style="stroke-width:8" />
-                        <line x1="50" y1="0" x2="150" y2="0" style="stroke-width:8" />
-                        <line x1="150" y1="0" x2="150" y2="50" style="stroke-width:6" />
-                        <circle id="head" cx="150" cy="70" r="20" stroke-width="3" fill="#34495E" />
-                        <line id="body" x1="150" y1="90" x2="150" y2="180" style="stroke-width:6" />
-                        <line id="arm_right" x1="150" y1="135" x2="180" y2="105" style="stroke-width:6" />
-                        <line id="arm_left" x1="150" y1="135" x2="120" y2="105" style="stroke-width:6" />
-                        <line id="knee_right" x1="150" y1="180" x2="180" y2="210" style="stroke-width:6" />
-                        <line id="arm_left" x1="150" y1="180" x2="120" y2="210" style="stroke-width:6" />
+                        <line x1="50" y1="0" x2="50" y2="500" style="stroke-width:4" />
+                        <line x1="0" y1="250" x2="100" y2="250" style="stroke-width:6" />
+                        <line x1="50" y1="0" x2="150" y2="0" style="stroke-width:6" />
+                        <line x1="150" y1="0" x2="150" y2="50" style="stroke-width:4" />
+                        <circle class="man" id="head" cx="150" cy="70" r="20" stroke-width="3" fill="#34495E" />
+                        <line  class="man"id="body" x1="150" y1="90" x2="150" y2="180" style="stroke-width:4" />
+                        <line  class="man"id="arm_right" x1="150" y1="135" x2="180" y2="105" style="stroke-width:4" />
+                        <line  class="man"id="arm_left" x1="150" y1="135" x2="120" y2="105" style="stroke-width:4" />
+                        <line  class="man"id="knee_right" x1="150" y1="178" x2="180" y2="210" style="stroke-width:4" />
+                        <line  class="man"id="knee_left" x1="150" y1="178" x2="120" y2="210" style="stroke-width:4" />
                     </svg>
                 </div>
                 <div class="wrong">
                     <p>wrong</p>
-                    <div class="wrong_words">dsf</div>
+                    <div class="wrong_words"></div>
                 </div>
             </div>
             <div class="word">
                 
             </div>
         </div>
+
+        <div class="snackbar">You have already entered this letter</div>
+
+        <div class="confirm_box">
+            <h3>Unfortunately you lost. 😕</h3>
+            <p class="anounce">...the word was: </p>
+            <button class="refresh">Play Again</button>
+        </div>
+        <div class="container2"></div>
     </div>
+    
     <script src="./index.js"></script>
 </body>
 </html>
