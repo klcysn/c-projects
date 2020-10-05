@@ -1,13 +1,19 @@
+html {font-size: 0.95vw;}
+
+*{box-sizing: border-box;
+font-weight: bold;}
 body {
     background: url("https://videohive.img.customer.envatousercontent.com/files/121873343/preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=9d055df0d188fd37b37c3e927e3fa1bf") no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 .container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    width: 80%;
+    margin: auto;
 
 }
 h1{
@@ -16,11 +22,29 @@ h1{
 
 input, .printer {
     width: 70%;
-    height: 8vh;
+    min-height: 8vh;
     font-size: 2rem;
     border: 5px solid black;
     border-radius: 10px;
     outline: none;
     background-color: white;
+    padding-left: 10px;
     
 }
+.printer {
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+button {
+    margin-top: 1rem;
+    width: 70%;
+    height: 8vh;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(243, 44, 9);
+    color: white;
+
+}
+
+
