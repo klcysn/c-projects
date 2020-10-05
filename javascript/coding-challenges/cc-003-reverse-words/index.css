@@ -1,0 +1,26 @@
+body {
+    background: url("https://videohive.img.customer.envatousercontent.com/files/121873343/preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=9d055df0d188fd37b37c3e927e3fa1bf") no-repeat;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+}
+h1{
+    color:white;
+}
+
+input, .printer {
+    width: 70%;
+    height: 8vh;
+    font-size: 2rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    
+}
