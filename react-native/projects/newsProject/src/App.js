@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, View, SafeAreaView, Button, Image, StyleSheet, ScrollView, TextInput} from "react-native";
+import {Text, View, SafeAreaView, StyleSheet, ScrollView, TextInput, Linking} from "react-native";
 import News from "./component/News"
 
 const App = () => {
@@ -7,7 +7,9 @@ const App = () => {
     <SafeAreaView style ={{flex : 1}}>
       <View style = {styles.topSection}>
           <Text style ={styles.header}>News</Text>
-          <TextInput placeholder = "Search News..." style = {styles.search} keyboardType = "web-search"/>
+          <TextInput placeholder = "Search News..." style = {styles.search} keyboardType = "web-search" onEndEditing = {(text) =>{
+            Linking.openURL(`https://news.google.com/search?q=${text}`);
+            }}  />
         </View>
       <ScrollView style = {styles.scrol}>
         <News/>
@@ -32,10 +34,12 @@ const styles = StyleSheet.create({
     borderRadius : 25,
     padding : 10,
     margin :5,
-    backgroundColor : "white"
+    backgroundColor : "white",
+    elevation : 20
   },
   topSection : {
-    backgroundColor : "#e0e0e0"
+    backgroundColor : "#FFFFFF",
+    elevation : 20
   }
 })
 

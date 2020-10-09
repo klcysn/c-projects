@@ -1,15 +1,14 @@
 import React from "react";
-import {Text, View, Image, StyleSheet, TouchableOpacity} from "react-native";
+import {Text, View, Image, StyleSheet, TouchableOpacity, Linking} from "react-native";
 import Data from "./Data"
 
 const News = () => {
     return(
         Data.map((news) =>{
             return(
-                
-                <TouchableOpacity>
+                <TouchableOpacity onPress ={() => {Linking.openURL(news.link)}}>
                     <View style = {styles.container}>
-                        <Image source ={news.src} style ={styles.image} />
+                        <Image source ={{uri : news.src}} style ={styles.image} />
                         <Text style ={styles.head}>{news.head}</Text>
                         <Text style ={styles.desc}>{news.desc}</Text>
                     </View>
@@ -30,7 +29,8 @@ const styles = StyleSheet.create({
         margin : 5,
         borderWidth :1,
         borderRadius :10,
-        backgroundColor : "#E0E0E0"
+        backgroundColor : "#FFFFFF",
+        elevation : 20
     },
     image : {
         width: 390,
@@ -40,9 +40,12 @@ const styles = StyleSheet.create({
     },
     head : {
         fontWeight : "bold",
-        fontSize : 15
+        fontSize : 15,
+        marginBottom : 3,
+        marginTop: 3
     },
     desc : {
-        fontSize : 13
+        fontSize : 13,
+        textAlign : "justify"
     }
 })
