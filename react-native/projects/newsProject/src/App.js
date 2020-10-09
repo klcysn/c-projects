@@ -27,7 +27,9 @@ const styles = StyleSheet.create({
   header : {
     fontSize : 30,
     fontWeight : "bold",
-    margin : 5
+    margin : 5,
+    color : "white",
+    marginLeft : 15
   },
   search :{
     borderWidth : 2,
@@ -39,7 +41,10 @@ const styles = StyleSheet.create({
   },
   topSection : {
     backgroundColor : "#FFFFFF",
-    elevation : 20
+    elevation : 20,
+    backgroundColor : "#b71c1c",
+    padding : 5
+    
   }
 })
 
