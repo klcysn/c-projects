@@ -1,5 +1,5 @@
 import React from "react";
-import {View, StyleSheet, Text, TouchableOpacity} from "react-native";
+import {View, StyleSheet, Text, TouchableOpacity, Dimensions} from "react-native";
 
 const MyButton = (props) => {
     return(
@@ -14,11 +14,12 @@ const MyButton = (props) => {
 const styles = StyleSheet.create({
     buttonContainer : {
         padding : 10,
-        width : 300,
+        width : Dimensions.get("window").width * 0.6,
         backgroundColor : "#08175B",
         borderRadius : 10,
         elevation : 30,
-        marginTop : 20
+        marginTop : 20,
+        alignSelf : "center"
     },
     text : {
         fontSize : 30,
