@@ -13,19 +13,19 @@ import {
  
 
 
-
+const todoList = []
+let count = 0;
 const App = () => {
-  const todoList = [3, 2]
-  const [task, setTask] = useState("")
+const [task, setTask] = useState("")
   const Task = ()=>{
     return(
      todoList.map((item)=>{
        return(
          <View style ={{flex : 1, flexDirection : "row", alignItems : "center"}}>
-          <TouchableOpacity style={{flex : 1}}>
-            <Text style ={{color : "white", fontSize : 20, backgroundColor :"#546E7A", padding : 5, textAlign : "center"}}>X</Text>
+          <TouchableOpacity style={{flex : 1}} >
+          <Text style={{color : "white", fontSize : 20, backgroundColor :"#546E7A", margin : 2, padding : 7, flex : 9}}>{item.task}</Text>
           </TouchableOpacity>
-          <Text style={{color : "white", fontSize : 20, backgroundColor :"#546E7A", margin : 2, padding : 5, flex : 9}}>{item}</Text>
+          
          </View>
         
        )
@@ -49,9 +49,10 @@ const App = () => {
         <View style = {styles.buttonContainer}>
           <TextInput placeholder = "Write a task!" style={styles.input} onChangeText ={(text) =>{setTask(text)}}/>
           <TouchableOpacity style = {styles.button} onPress ={()=>{
-            todoList.push(task)
-            console.log(task, todoList)
-            Task
+            todoList.push({task:task, id:count})
+            console.log(task, todoList,count)
+            count++
+            setTask("")
             }}>
             <Text style ={{color : "white", fontSize : 30, fontWeight : "bold"}}>ADD TODO</Text>
           </TouchableOpacity>
@@ -108,6 +109,10 @@ const styles = StyleSheet.create({
     marginBottom : 10,
     borderColor : "white",
     borderRadius : 15
+  },
+  completed : {
+    flex : 1,
+    backgroundColor : "red"
   }
 })
 
