@@ -14,18 +14,26 @@ import {
 
 
 const todoList = []
-let count = 0;
+let count = todoList.length
 const App = () => {
 const [task, setTask] = useState("")
   const Task = ()=>{
+    count = todoList.length
     return(
      todoList.map((item)=>{
+      let num = item.id
+      const clean =()=>{
+        todoList.splice(num, 1)
+        setTimeout(Task, 10)
+        console.log("clean -> num", num)
+        console.log(todoList)
+      }
        return(
          <View style ={{flex : 1, flexDirection : "row", alignItems : "center"}}>
-          <TouchableOpacity style={{flex : 1}} >
-          <Text style={{color : "white", fontSize : 20, backgroundColor :"#546E7A", margin : 2, padding : 7, flex : 9}}>{item.task}</Text>
+          <TouchableOpacity style={{flex : 1}} onPress ={clean}>
+            <Text style ={styles.number}>{item.id + 1}</Text>
           </TouchableOpacity>
-          
+          <Text style={{color : "white", fontSize : 20, backgroundColor :"#546E7A", margin : 2, padding : 5, flex : 9}}>{item.task}</Text>
          </View>
         
        )
@@ -51,7 +59,6 @@ const [task, setTask] = useState("")
           <TouchableOpacity style = {styles.button} onPress ={()=>{
             todoList.push({task:task, id:count})
             console.log(task, todoList,count)
-            count++
             setTask("")
             }}>
             <Text style ={{color : "white", fontSize : 30, fontWeight : "bold"}}>ADD TODO</Text>
@@ -110,10 +117,12 @@ const styles = StyleSheet.create({
     borderColor : "white",
     borderRadius : 15
   },
-  completed : {
-    flex : 1,
-    backgroundColor : "red"
-  }
+  number : {color : "white",
+  fontSize : 20,
+  backgroundColor :"#546E7A",
+  padding : 5,
+  textAlign : "center"
+}
 })
 
 export default App;
