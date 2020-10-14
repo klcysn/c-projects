@@ -122,9 +122,9 @@ const styles = StyleSheet.create({
   },
   number : {
     color : "white",
-    fontSize : 20,
+    fontSize : 25,
     backgroundColor :"#546E7A",
-    padding : 13,
+    padding : 9.5,
     textAlign : "center"
   },
   mainText : {color : "white",
@@ -140,7 +140,8 @@ const styles = StyleSheet.create({
     
   },
   time : {
-    color : "#FFA726"
+    color : "#FFA726",
+    fontWeight : "bold"
   }
 })
 
