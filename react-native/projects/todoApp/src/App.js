@@ -19,6 +19,7 @@ const App = () => {
   const [todo,setTodo] = useState([])
   const [input, setInput] = useState("")
   const [maximum, setMaximum] = useState(0)
+  const time = Date().split(" ").slice(0, 5).join(" - ")
   const Task = ()=>{
     return(
       todo.map((item)=>{
@@ -27,12 +28,16 @@ const App = () => {
         todo.splice(indx, 1)
         setInput("")
       }
+      
        return(
         <View style ={{flex : 1, flexDirection : "row", alignItems : "center"}}>
           <TouchableOpacity style={{flex : 2}} onPress ={clean} onPressIn ={()=>{setInput(" ")}}>
             <Text style ={styles.number}>X</Text>
           </TouchableOpacity>
-          <Text style={styles.mainText}>{item.input}</Text>
+          <View style={styles.mainTextContainer}>
+            <Text style={styles.mainText}>{item.input}</Text>
+            <Text style ={styles.time}>{item.time}</Text>
+          </View>
         </View>
        )
      })
@@ -55,7 +60,7 @@ const App = () => {
         <View style = {styles.buttonContainer}>
           <TextInput placeholder = "Write a task!" value={input} style={styles.input} onChangeText ={(text) =>{setInput(text)}}/>
           <TouchableOpacity style = {styles.button} onPress ={()=>{
-            setTodo([...todo,{input:input, id:maximum}])
+            setTodo([...todo,{input:input, id:maximum, time:time}])
             setMaximum(maximum + 1)
             setInput("")
             }}>
@@ -119,16 +124,23 @@ const styles = StyleSheet.create({
     color : "white",
     fontSize : 20,
     backgroundColor :"#546E7A",
-    padding : 10,
+    padding : 13,
     textAlign : "center"
   },
   mainText : {color : "white",
     fontSize : 20,
+    padding : 3,
+    
+  },
+  mainTextContainer : {
     backgroundColor :"#546E7A",
     margin : 2,
-    padding : 10,
     flex : 9,
+    paddingLeft : 5
     
+  },
+  time : {
+    color : "#FFA726"
   }
 })
 
