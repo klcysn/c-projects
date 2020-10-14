@@ -20,6 +20,7 @@ const App = () => {
   const [input, setInput] = useState("")
   const [maximum, setMaximum] = useState(0)
   const time = Date().split(" ").slice(0, 5).join(" - ")
+  
   const Task = ()=>{
     return(
       todo.map((item)=>{
@@ -35,7 +36,7 @@ const App = () => {
             <Text style ={styles.number}>X</Text>
           </TouchableOpacity>
           <View style={styles.mainTextContainer}>
-            <Text style={styles.mainText}>{item.input}</Text>
+            <Text style={styles.mainText}>{item.input.toUpperCase()}</Text>
             <Text style ={styles.time}>{item.time}</Text>
           </View>
         </View>
