@@ -8,34 +8,32 @@ import {
   TextInput,
   TouchableOpacity,
   Dimensions,
-  KeyboardAvoidingView,
+  KeyboardAvoidingView
 } from 'react-native';
  
 
 
-const todoList = []
-let count = todoList.length
+
+
 const App = () => {
-const [task, setTask] = useState("")
+  const [todo,setTodo] = useState([])
+  const [input, setInput] = useState("")
+  const [maximum, setMaximum] = useState(0)
   const Task = ()=>{
-    count = todoList.length
     return(
-     todoList.map((item)=>{
-      let num = item.id
+      todo.map((item)=>{
       const clean =()=>{
-        todoList.splice(num, 1)
-        setTimeout(Task, 10)
-        console.log("clean -> num", num)
-        console.log(todoList)
+        const indx = todo.findIndex((x) =>x.id==item.id)
+        todo.splice(indx, 1)
+        setInput("")
       }
        return(
-         <View style ={{flex : 1, flexDirection : "row", alignItems : "center"}}>
-          <TouchableOpacity style={{flex : 1}} onPress ={clean}>
-            <Text style ={styles.number}>{item.id + 1}</Text>
+        <View style ={{flex : 1, flexDirection : "row", alignItems : "center"}}>
+          <TouchableOpacity style={{flex : 2}} onPress ={clean} onPressIn ={()=>{setInput(" ")}}>
+            <Text style ={styles.number}>X</Text>
           </TouchableOpacity>
-          <Text style={{color : "white", fontSize : 20, backgroundColor :"#546E7A", margin : 2, padding : 5, flex : 9}}>{item.task}</Text>
-         </View>
-        
+          <Text style={styles.mainText}>{item.input}</Text>
+        </View>
        )
      })
     )
@@ -46,7 +44,7 @@ const [task, setTask] = useState("")
       <KeyboardAvoidingView style = {{flex : 1}}>
         <View style ={styles.head}>
           <Text style ={styles.text}>TODO</Text>
-          <Text style ={styles.text}>{todoList.length}</Text>
+          <Text style ={styles.text}>{todo.length}</Text>
         </View>
         <View  style = {styles.screen}>
           <ScrollView>
@@ -55,11 +53,11 @@ const [task, setTask] = useState("")
         </View>
         
         <View style = {styles.buttonContainer}>
-          <TextInput placeholder = "Write a task!" style={styles.input} onChangeText ={(text) =>{setTask(text)}}/>
+          <TextInput placeholder = "Write a task!" value={input} style={styles.input} onChangeText ={(text) =>{setInput(text)}}/>
           <TouchableOpacity style = {styles.button} onPress ={()=>{
-            todoList.push({task:task, id:count})
-            console.log(task, todoList,count)
-            setTask("")
+            setTodo([...todo,{input:input, id:maximum}])
+            setMaximum(maximum + 1)
+            setInput("")
             }}>
             <Text style ={{color : "white", fontSize : 30, fontWeight : "bold"}}>ADD TODO</Text>
           </TouchableOpacity>
@@ -117,12 +115,21 @@ const styles = StyleSheet.create({
     borderColor : "white",
     borderRadius : 15
   },
-  number : {color : "white",
-  fontSize : 20,
-  backgroundColor :"#546E7A",
-  padding : 5,
-  textAlign : "center"
-}
+  number : {
+    color : "white",
+    fontSize : 20,
+    backgroundColor :"#546E7A",
+    padding : 10,
+    textAlign : "center"
+  },
+  mainText : {color : "white",
+    fontSize : 20,
+    backgroundColor :"#546E7A",
+    margin : 2,
+    padding : 10,
+    flex : 9,
+    
+  }
 })
 
 export default App;
