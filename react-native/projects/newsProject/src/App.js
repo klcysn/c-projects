@@ -7,8 +7,8 @@ const App = () => {
     <SafeAreaView style ={{flex : 1}}>
       <View style = {styles.topSection}>
           <Text style ={styles.header}>News</Text>
-          <TextInput placeholder = "Search News..." style = {styles.search} keyboardType = "web-search" onEndEditing = {(text) =>{
-            Linking.openURL(`https://news.google.com/search?q=${text}`);
+          <TextInput placeholder = "Search News..." style = {styles.search} keyboardType = "web-search" onFocus = {() =>{
+            Linking.openURL(`https://news.google.com/search`);
             }}  />
         </View>
       <ScrollView style = {styles.scrol}>
