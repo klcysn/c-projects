@@ -1,0 +1,44 @@
+input{
+    display: block;
+    width: 80%;
+    font-size: xx-large;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border : 5px dashed black;
+}
+
+button{
+    display : block;
+    margin: auto;
+    font-size: xx-large;
+    padding: 10px;
+    background-color: rgb(255, 150, 80);
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(255, 150, 80, 0.5);
+}
+
+button:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+div{
+    border : 5px solid black;
+    margin : auto;
+    margin-top: 10px;
+    width : 80%;
+    height: 50vh;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    padding-top: 50px;
+}
