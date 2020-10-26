@@ -5,7 +5,7 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 
 const RestaurantDetail =(props)=>{
     const {restaurantDetails} = props.route.params
-    console.log(restaurantDetails)
+  
     return(
         <SafeAreaView style = {{flex : 1}}>
             <View style = {styles.container}>
@@ -20,6 +20,9 @@ const RestaurantDetail =(props)=>{
                 </TouchableOpacity>
                 <TouchableOpacity style ={styles.button} onPress={()=>Linking.openURL(restaurantDetails.mobile_reserve_url)}>
                     <Text style={styles.buttonText}>Reservation</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style ={styles.button} onPress={()=>props.navigation.navigate("Restaurants")}>
+                    <Text style={styles.buttonText}>Back to Reastaurant List in {restaurantDetails.city}</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>

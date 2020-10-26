@@ -38,7 +38,7 @@ const RestaurantList =(props)=>{
                 
                 {isLoading ?
                 <View style = {{flex : 1, justifyContent : "center", alignItems : "center"}}>
-                    <ActivityIndicator color ="#DA3743" size = {300} />
+                    <ActivityIndicator color ="#DA3743" size = {200} />
                 </View> 
                  : 
                 <FlatList

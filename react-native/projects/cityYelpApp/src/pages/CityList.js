@@ -20,6 +20,7 @@ const CityList =(props)=>{
         cityList = [...data.cities]
         setFilteredList(cityList)
         setLoading(false)
+        
     }
 
     const renderCities = ({item})=> <CityItem cityName = {item} onSelect ={()=>{props.navigation.navigate("Restaurants", {selectedCity : item})}} />
@@ -40,7 +41,7 @@ const CityList =(props)=>{
                 <SearchBar placeholder = {"Search a city..."} onSearch = {(search)=>searchCity(search)} />
                 {isLoading ? 
                 <View style={{flex : 1, flexDirection : "row", alignItems : "center", justifyContent :"center"}}>
-                    <ActivityIndicator color ="#DA3743" size = {300} />
+                    <ActivityIndicator color ="#DA3743" size = {200} />
                 </View>  : <FlatList 
                 data = {filteredList}
                 renderItem = {renderCities}
