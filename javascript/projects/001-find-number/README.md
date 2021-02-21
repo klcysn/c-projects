@@ -1,4 +1,4 @@
-https://klcysn.github.io/clarusway-projects/javascript/projects/001-find-number/
+https://klcysn.github.io/c-projects/javascript/projects/001-find-number/
 # Project-005 : Find the Number Game (JS-01)
 
 ## Description
