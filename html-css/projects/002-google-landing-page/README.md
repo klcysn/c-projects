@@ -1,4 +1,4 @@
-https://klcysn.github.io/clarusway-projects/html-css/projects/002-google-landing-page/
+https://klcysn.github.io/c-projects/html-css/projects/002-google-landing-page/
 # Project-002 :Google Landing Page (HC-02)
 
 ## Description
