@@ -1,4 +1,4 @@
-const wordList = ["absurd", "awkward", "clarusway", "funny", "galaxy", "joking", "fullstack", "strength", "puzzling", "kilobyte", "keyhole", "cycle", "loop", "slack", "function", "fixable", "buzzard", "avenue", "lengths", "monitor", "information"];
+const wordList = ["absurd", "awkward", "funny", "galaxy", "joking", "fullstack", "strength", "puzzling", "kilobyte", "keyhole", "cycle", "loop", "slack", "function", "fixable", "buzzard", "avenue", "lengths", "monitor", "information"];
 const i = Math.floor(Math.random() * 20) + 1; //use i for take random index from wordlist
 const word = wordList[i].split(""); //split wordlist to append its chars to in div word on screen
 let wordDiv = []; //to collect every word char with class as object
